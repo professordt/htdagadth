@@ -1,0 +1,32 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "HTDAGADTH System Configuration",
+  "version": "2.0.0",
+  "architecture": {
+    "name": "HTDAGADTH",
+    "description": "Strict-Fractional Dual-Space Task Mesh & Evidentiary Telemetry Pipeline",
+    "bifurcation_threshold_kappa": { "numerator": 27, "denominator": 32 },
+    "residue_coefficient_delta": { "numerator": 5, "denominator": 32 }
+  },
+  "math_policy": {
+    "precision_mode": "STRICT_FRACTIONAL_Q",
+    "log_base": "1/phi",
+    "allow_float_approximations": false
+  },
+  "nine_pillars": {
+    "visual": { "units": "nm, CIELAB", "variables": ["wavelength", "spectral_centroid"] },
+    "sonic": { "units": "Hz, dB SPL, Asper", "variables": ["adsr_attack", "roughness_hz"] },
+    "olfactory": { "units": "Pa, log P", "variables": ["vapor_pressure", "volatility"] },
+    "gustatory": { "units": "mol/L, pH", "variables": ["concentration", "ph"] },
+    "haptic": { "units": "GPa, mu", "variables": ["youngs_modulus", "friction_coeff"] },
+    "proprioceptive": { "units": "Hz", "variables": ["resonance_freq_6_90"] },
+    "chrono": { "units": "ms, years", "variables": ["temporal_adsr", "semantic_drift"] },
+    "geo": { "units": "Lat/Lon, meters ASL", "variables": ["coord_anchor", "elevation"] },
+    "interoception": { "units": "ratio Q[0,1], scalar Q[-1,1]", "variables": ["energy_capacity_I", "autonomic_balance_B"] }
+  },
+  "evidentiary_compliance": {
+    "fre_rules": ["FRE 901", "FRE 902(13)", "FRE 902(14)", "FRE 707"],
+    "eu_ai_act": "Article 50",
+    "hashing_algorithm": "SHA-256"
+  }
+}
